@@ -6,7 +6,7 @@ This guide outlines pulling your stock image, comparing it against an OpenFlash 
 * **Hardware:** [TOPDON RLink J2534 Reprogramming Tool](https://www.amazon.ca/TOPDON-Reprogramming-High-Speed-Programmer-Diagnostic/dp/B0FS11XMH1) connected via USB-C to a Windows 10/11 laptop.
 * **Software Installed:** 
   * [TOPDON RLink Platform](https://service.topdon.com/portal/en/kb/articles/subaru-oem-software-with-rlink-j2534-connection-instructions) (with J2534 DLL drivers installed and updated).
-  * [FastECU](https://syvanenmotorsport.fi).
+  * [FastECU](https://github.com/miikasyvanen/FastECU/releases).
   * [RomRaider](https://www.romraider.com/).
 * **Definitions:** Download and place the latest Subaru BRZ/FT86 ECU definitions (e.g., `defs.xml`) into your [RomRaider](https://www.romraider.com/) and FastECU metadata directories. Ensure your vehicle's specific Calibration ID (CalID, e.g., `ZA1JA01G`) is supported.
 * **Vehicle Preparation:** Ensure your BRZ's battery voltage is stable (use a tender). Plug the TOPDON RLink into the OBD-II port and the USB into your PC.
