@@ -28,7 +28,7 @@ This guide outlines pulling your stock image, comparing it against an OpenFlash 
 2. Go to **ECU Definitions -> Definition Manager** and ensure your definition file path is pointed to the folder containing your BRZ XML definitions.
 3. Open your pulled stock ROM file (`BRZ_Stock_Backup.bin`) via `File -> Open`.
 4. Ensure that you are using the correct definition for your base map [SubaruDefs](https://github.com/TD-D/SubaruDefs/tree/Stable).
-5. Open your target **OFT Tune file** (e.g., the corresponding Stage 1 or Stage 2 `.bin` map from the [Off-The-Shelf (OTS) Tune File Downloads](https://support.openflashtablet.com/support/solutions/articles/42000015839-off-the-shelf-ots-tune-file-downloads-v4-03)). Note that the definition file for the OTS tune is different than for your base map.
+5. Open your target **OFT Tune file** (e.g., the corresponding Stage 1 or Stage 2 `.bin` map from the [Off-The-Shelf (OTS) Tune File Downloads](https://support.openflashtablet.com/support/solutions/articles/42000015839-off-the-shelf-ots-tune-file-downloads-v4-03). Note that the definition file for the OTS tune is different than for your base map.
 6. With both ROMs open in the sidebar, compare the images by going to `Edit -> Compare Images` (e.g., *Fuel*, *Timing Advance*, *MAF Scaling*).
 7. Right-click on differing tables to view them side-by-side or compare them to identify changes made by the OFT tune.
 
