@@ -46,10 +46,18 @@ This guide outlines pulling your stock image, comparing it against an OpenFlash 
 ---
 
 ## 5. Reflashing the ECU
-1. Open **FastECU** (or EcuFlash).
+1. Open **FastECU**.
 2. Open your newly modified calibration file (`BRZ_Custom_Hybrid.bin`).
 3. Ensure the TOPDON RLink is still connected and the ignition is **ON**.
 4. Perform a **"Test Write"** first to ensure checksums and metadata are correctly verified by the software.
 5. Once the test write succeeds, click **"Write"** (or Flash) to upload the modified calibration to your BRZ ECU.
 6. **Important:** Do not unplug the cable, turn off the ignition, or disrupt power while writing.
 7. Once the flash completes successfully, turn the ignition **OFF** for 10 seconds, then start the car to verify smooth idle and clear any temporary trouble codes (CELs) using the software.
+8. Without touching the trottle, allow the car to idle for 2 minutes, before shutting off again. This allows the ECU to relearn the idle position for sensors.
+9. Wait 10 seconds, and then restart the car and allow it to idle for another 2 minutes without touching any inputs. 
+
+---
+
+## 6. Notes
+1. You may encounter a `P050B - Cold Start Ignition Timing Performance` error code with the modified tunes, as the tune modifies the startup timing retard to reduce noise. This can be disabled using RomRaider.
+2. You may also encounter `P0420 - Catalyst System Efficiency Below Threshold (Bank 1)` with all modified tunes (particularly Stage 2+). This can also be disabled using RomRaider.
