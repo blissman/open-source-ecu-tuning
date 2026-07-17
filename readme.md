@@ -17,7 +17,7 @@ This guide outlines pulling your stock image, comparing it against an OpenFlash 
 1. Open **FastECU**.
 2. Select your vehicle profile: **Subaru -> BRZ / Scion FR-S / GT86**.
 3. Choose your interface: Select the **J2534 PassThru** driver corresponding to your TOPDON RLink (e.g. AA Rlink).
-4. Choose your protocol by clicking **Select protocol** and choosing **sub_ecu_denso_sh72351_can**.
+4. Choose your protocol by clicking **Select protocol** and choosing **sub_ecu_denso_sh72531_can**.
 5. Turn the ignition to the **ON** position (engine off).
 6. Click the **"Read"** (or Download) button. 
 7. Once the ROM image is successfully dumped, save the file immediately as a `.bin` file (e.g., `BRZ_Stock_Backup.bin`). *Keep this safe; it is your baseline restore point.*
